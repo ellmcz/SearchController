@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchController">
+            <connections>
+                <outlet property="coverView" destination="4qX-gB-4K6" id="8uU-gl-33I"/>
+                <outlet property="searchBar" destination="Mgu-6y-bEr" id="VX1-Js-1zX"/>
+                <outlet property="searchTop" destination="KSt-Jh-PxA" id="tGb-4D-O0G"/>
+                <outlet property="tableView" destination="r2f-6A-AoP" id="sbQ-Oe-XJ1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Mgu-6y-bEr">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Tmc-eg-8I1"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="XaV-UU-0Mf"/>
+                    </connections>
+                </searchBar>
+                <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r2f-6A-AoP">
+                    <rect key="frame" x="0.0" y="44" width="320" height="436"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="77K-ai-Tj3"/>
+                        <outlet property="delegate" destination="-1" id="I9T-Ra-zy0"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4qX-gB-4K6">
+                    <rect key="frame" x="0.0" y="44" width="320" height="436"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="H20-QQ-2pY" appends="YES" id="cuc-aI-14q"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="4qX-gB-4K6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HHK-Ly-3zz"/>
+                <constraint firstItem="Mgu-6y-bEr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KSt-Jh-PxA"/>
+                <constraint firstAttribute="bottom" secondItem="r2f-6A-AoP" secondAttribute="bottom" id="XFb-8K-gXn"/>
+                <constraint firstAttribute="trailing" secondItem="4qX-gB-4K6" secondAttribute="trailing" id="YLN-MR-vzs"/>
+                <constraint firstItem="4qX-gB-4K6" firstAttribute="top" secondItem="Mgu-6y-bEr" secondAttribute="bottom" id="ac0-p2-cV5"/>
+                <constraint firstItem="r2f-6A-AoP" firstAttribute="top" secondItem="Mgu-6y-bEr" secondAttribute="bottom" id="n5D-ne-eKE"/>
+                <constraint firstAttribute="trailing" secondItem="Mgu-6y-bEr" secondAttribute="trailing" id="oZV-g8-W34"/>
+                <constraint firstAttribute="bottom" secondItem="4qX-gB-4K6" secondAttribute="bottom" id="pBh-EV-Njx"/>
+                <constraint firstAttribute="trailing" secondItem="r2f-6A-AoP" secondAttribute="trailing" id="pQK-Bo-csd"/>
+                <constraint firstItem="Mgu-6y-bEr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wdF-9J-vyH"/>
+                <constraint firstItem="r2f-6A-AoP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xcm-7p-5fj"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="31" y="312"/>
+        </view>
+        <tapGestureRecognizer id="H20-QQ-2pY">
+            <connections>
+                <action selector="tap:" destination="-1" id="Rk6-ea-ats"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>
