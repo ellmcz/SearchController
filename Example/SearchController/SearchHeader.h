@@ -1,13 +1,13 @@
 //
-//  SortPropertyHeader.h
-//  Example
+//  SearchHeader.h
+//  sssss
 //
-//  Created by MacBook Air on 16/7/26.
+//  Created by 王钱宝 on 16/6/28.
 //  Copyright © 2016年 ellmcz. All rights reserved.
 //
 
-#ifndef SortPropertyHeader_h
-#define SortPropertyHeader_h
+#ifndef SearchHeader_h
+#define SearchHeader_h
 
 #import "NSArray+Sort.h"
 #import "NSString+Chinese.h"
@@ -15,13 +15,14 @@
 #import "NSMutableArray+Only.h"
 #import "NSMutableArray+Sort.h"
 #import "NSString+Pure.h"
-#import "NSString+Property.h"
+#import "SearchController.h"
 
-////
+//
 #define Property_hSubFirstPinYin(Name)  @property (nonatomic, copy) NSString *propertyFirstPinYin##Name;
 #define Property_hBool(Name)    @property (nonatomic, assign) BOOL is##Name;
 #define Property_hAllPigYin(Name)  @property (nonatomic, copy) NSString *propertyAllPinYin##Name;
 #define Property_hSubAllPigYin(Name)  @property (nonatomic, copy) NSString *propertySubAllPinYin##Name;
+//
 #define tableViewData_h()\
 @property (nonatomic, strong) NSMutableArray *pinYinData;\
 @property (nonatomic, strong) NSMutableArray *totalData;\
@@ -46,7 +47,7 @@ _totalData = [[NSMutableArray alloc] init];\
 }\
 return _totalData;\
 }\
-//
+
 #define tableViewDataSource_m()\
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{\
 return self.totalData.count;\
@@ -55,9 +56,9 @@ return self.totalData.count;\
 return [self.totalData[section] count];\
 }
 //
-#define tableViewSectionIndexTitle_m()\
+#define tableViewSectinTitle_m()\
 -(NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView{\
-return [self.pinYinData copy];\
+    return [self.pinYinData copy];\
 }
 
-#endif /* SortPropertyHeader_h */
+#endif /* SearchHeader_h */

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D7C08971D4E2D8A004B4BF4 /* bg_navigationBar_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7C08921D4E2D8A004B4BF4 /* bg_navigationBar_normal.png */; };
+		5D7C08981D4E2D8A004B4BF4 /* SearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7C08941D4E2D8A004B4BF4 /* SearchController.m */; };
+		5D7C08991D4E2D8A004B4BF4 /* SearchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D7C08951D4E2D8A004B4BF4 /* SearchController.xib */; };
+		5DFD75F11D4D08F100B257F6 /* chinacities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5DFD75F01D4D08F100B257F6 /* chinacities.plist */; };
 		FA2C10361D47767900F90895 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2C10231D47767900F90895 /* MJExtensionConst.m */; };
 		FA2C10371D47767900F90895 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2C10251D47767900F90895 /* MJFoundation.m */; };
 		FA2C10381D47767900F90895 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2C10271D47767900F90895 /* MJProperty.m */; };
@@ -23,9 +27,6 @@
 		FA3CA4741D472116003FC9AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3CA4721D472116003FC9AC /* LaunchScreen.storyboard */; };
 		FA3CA47F1D472117003FC9AC /* ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3CA47E1D472117003FC9AC /* ExampleTests.m */; };
 		FA3CA48A1D472117003FC9AC /* ExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3CA4891D472117003FC9AC /* ExampleUITests.m */; };
-		FA3CA4AE1D47214B003FC9AC /* bg_navigationBar_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3CA4981D47214B003FC9AC /* bg_navigationBar_normal.png */; };
-		FA3CA4AF1D47214B003FC9AC /* SearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3CA49A1D47214B003FC9AC /* SearchController.m */; };
-		FA3CA4B01D47214B003FC9AC /* SearchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA3CA49B1D47214B003FC9AC /* SearchController.xib */; };
 		FA3CA4B11D47214B003FC9AC /* NSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3CA49F1D47214B003FC9AC /* NSArray+Sort.m */; };
 		FA3CA4B31D47214B003FC9AC /* NSMutableArray+Only.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3CA4A31D47214B003FC9AC /* NSMutableArray+Only.m */; };
 		FA3CA4B41D47214B003FC9AC /* NSMutableArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3CA4A51D47214B003FC9AC /* NSMutableArray+Sort.m */; };
@@ -56,6 +57,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D7C08921D4E2D8A004B4BF4 /* bg_navigationBar_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_navigationBar_normal.png; sourceTree = "<group>"; };
+		5D7C08931D4E2D8A004B4BF4 /* SearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchController.h; sourceTree = "<group>"; };
+		5D7C08941D4E2D8A004B4BF4 /* SearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchController.m; sourceTree = "<group>"; };
+		5D7C08951D4E2D8A004B4BF4 /* SearchController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchController.xib; sourceTree = "<group>"; };
+		5D7C08961D4E2D8A004B4BF4 /* SearchHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchHeader.h; sourceTree = "<group>"; };
+		5DFD75F01D4D08F100B257F6 /* chinacities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = chinacities.plist; sourceTree = "<group>"; };
 		FA2C10211D47767900F90895 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
 		FA2C10221D47767900F90895 /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
 		FA2C10231D47767900F90895 /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
@@ -90,11 +97,6 @@
 		FA3CA4851D472117003FC9AC /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3CA4891D472117003FC9AC /* ExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleUITests.m; sourceTree = "<group>"; };
 		FA3CA48B1D472117003FC9AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA3CA4981D47214B003FC9AC /* bg_navigationBar_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_navigationBar_normal.png; sourceTree = "<group>"; };
-		FA3CA4991D47214B003FC9AC /* SearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchController.h; sourceTree = "<group>"; };
-		FA3CA49A1D47214B003FC9AC /* SearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchController.m; sourceTree = "<group>"; };
-		FA3CA49B1D47214B003FC9AC /* SearchController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchController.xib; sourceTree = "<group>"; };
-		FA3CA49C1D47214B003FC9AC /* SearchHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchHeader.h; sourceTree = "<group>"; };
 		FA3CA49E1D47214B003FC9AC /* NSArray+Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sort.h"; sourceTree = "<group>"; };
 		FA3CA49F1D47214B003FC9AC /* NSArray+Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Sort.m"; sourceTree = "<group>"; };
 		FA3CA4A21D47214B003FC9AC /* NSMutableArray+Only.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Only.h"; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				FA3CA4DA1D472198003FC9AC /* CityModel.m */,
 				FA3CA4DB1D472198003FC9AC /* CompanyModel.h */,
 				FA3CA4DC1D472198003FC9AC /* CompanyModel.m */,
+				5DFD75F01D4D08F100B257F6 /* chinacities.plist */,
 				FA2C10201D47767900F90895 /* MJExtension */,
 				FA3CA4971D47214B003FC9AC /* SearchCenter */,
 				FA3CA4701D472116003FC9AC /* Assets.xcassets */,
@@ -240,11 +243,11 @@
 		FA3CA4971D47214B003FC9AC /* SearchCenter */ = {
 			isa = PBXGroup;
 			children = (
-				FA3CA4981D47214B003FC9AC /* bg_navigationBar_normal.png */,
-				FA3CA4991D47214B003FC9AC /* SearchController.h */,
-				FA3CA49A1D47214B003FC9AC /* SearchController.m */,
-				FA3CA49B1D47214B003FC9AC /* SearchController.xib */,
-				FA3CA49C1D47214B003FC9AC /* SearchHeader.h */,
+				5D7C08921D4E2D8A004B4BF4 /* bg_navigationBar_normal.png */,
+				5D7C08931D4E2D8A004B4BF4 /* SearchController.h */,
+				5D7C08941D4E2D8A004B4BF4 /* SearchController.m */,
+				5D7C08951D4E2D8A004B4BF4 /* SearchController.xib */,
+				5D7C08961D4E2D8A004B4BF4 /* SearchHeader.h */,
 				FA3CA49D1D47214B003FC9AC /* SortProperty */,
 			);
 			path = SearchCenter;
@@ -375,9 +378,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA3CA4741D472116003FC9AC /* LaunchScreen.storyboard in Resources */,
-				FA3CA4AE1D47214B003FC9AC /* bg_navigationBar_normal.png in Resources */,
 				FA3CA4711D472116003FC9AC /* Assets.xcassets in Resources */,
-				FA3CA4B01D47214B003FC9AC /* SearchController.xib in Resources */,
+				5D7C08991D4E2D8A004B4BF4 /* SearchController.xib in Resources */,
+				5DFD75F11D4D08F100B257F6 /* chinacities.plist in Resources */,
+				5D7C08971D4E2D8A004B4BF4 /* bg_navigationBar_normal.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,11 +408,11 @@
 			files = (
 				FA3CA4B11D47214B003FC9AC /* NSArray+Sort.m in Sources */,
 				FA2C10361D47767900F90895 /* MJExtensionConst.m in Sources */,
-				FA3CA4AF1D47214B003FC9AC /* SearchController.m in Sources */,
 				FA2C103D1D47767900F90895 /* NSObject+MJKeyValue.m in Sources */,
 				FA3CA4B61D47214B003FC9AC /* NSString+Property.m in Sources */,
 				FA3CA4691D472116003FC9AC /* AppDelegate.m in Sources */,
 				FA3CA4661D472116003FC9AC /* main.m in Sources */,
+				5D7C08981D4E2D8A004B4BF4 /* SearchController.m in Sources */,
 				FA2C103F1D47767900F90895 /* NSString+MJExtension.m in Sources */,
 				FA2C10381D47767900F90895 /* MJProperty.m in Sources */,
 				FA2C10371D47767900F90895 /* MJFoundation.m in Sources */,

@@ -5,7 +5,6 @@
 //
 
 #import "SearchController.h"
-#import "NSString+Chinese.h"
 #import "NSString+Property.h"
 @interface SearchController ()<UISearchBarDelegate,UITableViewDelegate,UITableViewDataSource>
 
@@ -169,7 +168,7 @@
     [self.resultData removeAllObjects];
     if (self.subPropertyName) {
         for (id model in self.data) {
-            if ([[model valueForKey:self.titlePropertyName] containsString:searchText]||[[model valueForKey:self.titleSelfPinYinPropertyName] containsString:searchText]||[[model valueForKey:self.titleSelfSubPinYinPropertyName] containsString:searchText]||[[model valueForKey:self.subPropertyName] containsString:searchText]||[[model valueForKey:self.subSelfPinYinPropertyName] containsString:searchText]||[[model valueForKey:self.subSelfSubPinYinPropertyName] containsString:searchText]) {
+            if ([[model valueForKey:self.subPropertyName] containsString:searchText]||[[model valueForKey:self.titleSelfPinYinPropertyName] containsString:searchText]||[[model valueForKey:self.titlePropertyName] containsString:searchText]||[[model valueForKey:self.subSelfPinYinPropertyName] containsString:searchText]||[[model valueForKey:self.subSelfSubPinYinPropertyName] containsString:searchText]||[[model valueForKey:self.titleSelfSubPinYinPropertyName] containsString:searchText]) {
                 [self.resultData addObject:model];
             }
         }

@@ -91,30 +91,30 @@
 
     self.searchBar.placeholder=@"我想去上班的公司";
     self.titlePropertyName=@"title";
-//    self.titleSubPinYinPropertyName=@"title";
+    self.titleSubPinYinPropertyName=@"title";
     self.subPropertyName=@"name";
-//    self.subSubPinYinPropertyName=@"name";
+    self.subSubPinYinPropertyName=@"name";
    
     
     
     
     
 ////
-//
+
 //    CityModel *cityModel=[[CityModel alloc]init];
 //    cityModel.name=@"甘谷";
 //    cityModel.code=@"1111";
 //    cityModel.spell=@"gangu";
 //    NSArray *arrayM=@[cityModel];
 //    self.data=[CityModel mj_objectArrayWithFilename:@"chinacities.plist"];
-//    self.pinYinData=[SortedProperty sortedSelfTitleCityWithStringFirstTitle:@"" SecondTitle:@"热"];
-//    self.totalData=[SortedProperty sortedSelfCityModelCityWithArray:self.data PinYinData:self.pinYinData PropertyName:@"name" FirstArray:(NSMutableArray *)arrayM SecondArray:(NSMutableArray *)arrayM];
+//    self.pinYinData=[SortedProperty sortedTitleCityWithString];
+//    self.totalData=[SortedProperty sortedCityModelCityWithArray:self.data PinYinData:self.pinYinData PropertyName:@"name"];
 //    self.title=@"城市切换";
 //    self.titlePropertyName=@"name";
 //    self.titleSubPinYinPropertyName=@"name";
 //    self.subPropertyName=@"code";
 //    self.subPinYinPropertyName=@"code";
-//    
+//
 //    NSLog(@"%@",[[NSDate date] constellation]);
     
 }
