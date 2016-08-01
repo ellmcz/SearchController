@@ -9,8 +9,8 @@
 #ifndef SearchHeader_h
 #define SearchHeader_h
 #if __has_include(<SearchHeader/SearchHeader.h>)
-FOUNDATION_EXPORT double SortPropertyVersion;
-FOUNDATION_EXPORT const unsigned char SortPropertyVersionString[];
+FOUNDATION_EXPORT double SearchVersion;
+FOUNDATION_EXPORT const unsigned char SearchVersionString[];
 #import <SearchHeader/NSArray+Sort.h>
 #import <SearchHeader/NSString+Chinese.h>
 #import <SearchHeader/NSMutableArray+Only.h>
