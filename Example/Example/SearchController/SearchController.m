@@ -81,7 +81,7 @@
     _subSubPinYinPropertyName=subSubPinYinPropertyName.propertySubAllPinYin;
 }
 - (void)viewDidLoad {
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"bg_navigationBar_normal"] forBarMetrics:(UIBarMetricsDefault)];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"SearchContoller.bundle/navigationBar"] forBarMetrics:(UIBarMetricsDefault)];
     self.tableView.sectionIndexColor=[UIColor blackColor];
     
     [super viewDidLoad];
@@ -176,7 +176,7 @@
        
     }else{
         for (id model in self.data) {
-            if ([[model valueForKey:self.titlePropertyName] containsString:searchText]||[[model valueForKey:self.titleSelfPinYinPropertyName] containsString:searchText]||[[model valueForKey:self.titleSubPinYinPropertyName] containsString:searchText]) {
+            if ([[model valueForKey:self.titlePropertyName] containsString:searchText]||[[model valueForKey:self.titleSelfPinYinPropertyName] containsString:searchText]||[[model valueForKey:self.titleSelfSubPinYinPropertyName] containsString:searchText]) {
                 [self.resultData addObject:model];
             }
         }
